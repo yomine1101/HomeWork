@@ -29,4 +29,12 @@ public class OrderService {
         }
         return null;
     }
+
+    public int calTotal(){
+        int price=0;
+        for(int i=0; i<this.orderList.size();i++){
+            price += orderList.get(i).getTotalPrice();
+        }
+        return price;
+    }
 }
