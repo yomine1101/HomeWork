@@ -4,9 +4,9 @@
 MemberData裡面資料
 
 ``` 
-	private int id 				//會員編號
-    private String name 		//會員姓名
-    private String email 		//會員電子郵件
+    private int id 		//會員編號
+    private String name 	//會員姓名
+    private String email 	//會員電子郵件
     private String password 	//會員密碼
  ```
 
