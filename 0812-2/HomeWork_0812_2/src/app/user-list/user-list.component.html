@@ -1,0 +1,24 @@
+<div class="card my-5">
+  <div class="card-body">
+    <table class="table table-hover table-dark">
+      <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">Age</th>
+        <th scope="col">Action</th>
+
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let user of users; let i = index;">
+        <td>{{ user.id }}</td>
+        <td>{{ user.name }}</td>
+        <td>{{ user.age }}</td>
+        <td><button (click)="gotoUpdateList(this.user.id!)" class = "btn btn-primary">Update</button></td>
+        <td><button type="button" class="btn btn-danger" (click)="deleteItem(user.id!, i)">Delete</button></td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

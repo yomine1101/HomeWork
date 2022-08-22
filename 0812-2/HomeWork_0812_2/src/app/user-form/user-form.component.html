@@ -1,0 +1,27 @@
+  <h2>Add User</h2>
+<div class="card my-5">
+  <div class="card-body">
+    <form style="text-align: center;"  (ngSubmit)="onSubmit()" #userForm="ngForm">
+      <div class="form-group">
+        <label for="name" style="font-size: 25px;">Name</label>
+        <input type="text" [(ngModel)]="user.name"
+               class="form-control"
+               id="name"
+               name="name"
+               required #name="ngModel">
+      </div>
+      <div [hidden]="!name.pristine" class="alert alert-danger">Name is required</div>
+      <div class="form-group">
+        <label for="age" style="font-size: 25px;">Age</label>
+        <input type="text" [(ngModel)]="user.age"
+               class="form-control"
+               id="age"
+               name="age"
+               required #age="ngModel">
+        <div [hidden]="!age.pristine" class="alert alert-danger">Name is required</div>
+      </div>
+      <button type="submit" [disabled]="!userForm.form.valid"
+              class="btn btn-outline-success col-2">Add</button>
+    </form>
+  </div>
+</div>
