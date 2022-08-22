@@ -2,11 +2,11 @@
 ###### tags: `Spring Boot` `Angular` 
 
 ---
-:::danger
+
 😢 刪除跟增加的 id 有問題，尚未修改完全
 
 **持續修改中...**
-:::
+
 
 ## Load User View
 **查詢所有使用者**
